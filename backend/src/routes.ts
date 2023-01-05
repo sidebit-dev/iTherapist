@@ -4,6 +4,7 @@ const router = Router();
 
 router.get('/teste', (req: Request, res: Response) => {
     return res.json({iTherapist: "Online!"})
+    //throw new Error('Erro ao fazer essa requisição.')
 });
 
 export { router };
