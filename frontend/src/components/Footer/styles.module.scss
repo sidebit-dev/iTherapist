@@ -1,0 +1,38 @@
+.footerContainer{
+    height: 3rem; 
+    border-top: 1px solid var(--green-900);
+ }
+ 
+ .footerContent{
+     max-width: 1120px;
+     height: 3rem;
+     margin: 0 auto;
+     padding: 0 2rem;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+     img{
+         cursor: pointer;
+     }
+ }
+ 
+ .text{
+     padding: 0 0.5rem;
+     display: flex;
+     flex-direction: row;
+     transition: color 0.7s;
+     justify-content: center;
+     align-items: center;
+     color: var(--white);
+ 
+     & + .text{
+         margin-left: 3rem;
+
+     }
+ 
+     &:hover{
+         color: var(--green-900);
+     }
+ }
